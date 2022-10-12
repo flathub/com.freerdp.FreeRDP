@@ -5,11 +5,8 @@
   <summary>FreeRDP (Remote Desktop Protocol) Client for Linux.</summary>
   <description>
       <p>
-          FreeRDP flatpak provides xfreerdp and wlfreerdp clients for systems lacking proper H264 support.
-
-          By default a client suitable to your environment is started (xfreerdp for X11, wlfreerdp for wayland)
-          * start with 'flatpak run --command=xfreerdp com.freerdp.FreeRDP' to force the use of xfreerdp.
-          * 'flatpak run --command=freerdp-proxy com.freerdp.FreeRDP' to start proxy
+				FreeRDP flatpak provides xfreerdp client for systems lacking proper H264 support.
+				This build is focused on compatibility with windows RDP servers and ships custom OpenSSL 1.1.1 to allow working connections to older systems like Windows 7 or Server 2008
     </p>
   </description>
    <categories>
