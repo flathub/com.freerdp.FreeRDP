@@ -16,6 +16,7 @@
     "--share=network",
     "--socket=pulseaudio",
     "--socket=cups",
+    "--socket=pcsc",
     "--filesystem=xdg-download"
   ],
   "add-build-extensions": {
@@ -109,8 +110,10 @@
         "-DWITH_SERVER:BOOL=OFF",
         "-DWITH_SAMPLE:BOOL=OFF",
         "-DWITH_CUPS:BOOL=ON",
-        "-DWITH_FFMPEG:BOOL=ON",
-        "-DWITH_DSP_FFMPEG:BOOL=ON",
+        "-DWITH_FFMPEG:BOOL=OFF",
+        "-DWITH_DSP_FFMPEG:BOOL=OFF",
+        "-DWITH_FAAC:BOOL=OFF",
+        "-DWITH_FAAD2:BOOL=OFF",
         "-DWITH_OSS:BOOL=OFF",
         "-DWITH_PULSE:BOOL=ON"
       ],
