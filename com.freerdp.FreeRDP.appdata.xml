@@ -31,17 +31,8 @@
   <content_rating type="oars-1.0" />
 
   <releases>
-    <release version="2.10.0" type="stable" urgency="medium" date="2023-02-16">
-      <url>https://github.com/FreeRDP/FreeRDP/releases/tag/2.10.0</url>
-    </release>
-    <release version="2.9.0" type="stable" urgency="medium" date="2022-11-16">
-      <url>https://github.com/FreeRDP/FreeRDP/releases/tag/2.9.0</url>
-    </release>
-    <release version="2.8.1" type="stable" urgency="medium" date="2022-10-12">
-      <url>https://github.com/FreeRDP/FreeRDP/releases/tag/2.8.1</url>
-    </release>
-    <release version="2.8.0" type="stable" urgency="medium" date="2022-07-28">
-      <url>https://github.com/FreeRDP/FreeRDP/releases/tag/2.8.0</url>
+    <release version="3.0.0-beta1" type="beta" urgency="medium" date="2023-07-21">
+      <url>https://github.com/FreeRDP/FreeRDP/releases/tag/3.0.0-beta1</url>
     </release>
   </releases>
 </component>
