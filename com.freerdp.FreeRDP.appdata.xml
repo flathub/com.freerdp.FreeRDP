@@ -2,7 +2,7 @@
 <component type="console-application">
   <id>com.freerdp.FreeRDP</id>
    <name>FreeRDP Remote Desktop Client</name>
-  <summary>FreeRDP (Remote Desktop Protocol) Client for Linux.</summary>
+  <summary>FreeRDP (Remote Desktop Protocol) Client for Linux</summary>
   <description>
       <p>
 				FreeRDP flatpak provides xfreerdp client for systems lacking proper H264 support.
