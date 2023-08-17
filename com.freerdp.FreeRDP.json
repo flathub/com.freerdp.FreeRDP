@@ -81,7 +81,12 @@
         {
           "type": "archive",
           "url": "https://www.openssl.org/source/openssl-1.1.1t.tar.gz",
-          "sha256": "8dee9b24bdb1dcbf0c3d1e9b02fb8f6bf22165e807f45adeb7c9677536859d3b"
+          "sha256": "8dee9b24bdb1dcbf0c3d1e9b02fb8f6bf22165e807f45adeb7c9677536859d3b",
+          "x-checker-data": {
+              "type": "anitya",
+              "project-id": 20333,
+              "url-template": "https://www.openssl.org/source/openssl-$version.tar.gz"
+          }
         }
       ]
     },
