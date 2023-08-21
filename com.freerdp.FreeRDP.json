@@ -1,150 +1,150 @@
 {
-  "app-id": "com.freerdp.FreeRDP",
-  "runtime": "org.freedesktop.Platform",
-  "runtime-version": "22.08",
-  "sdk": "org.freedesktop.Sdk",
-  "command": "xfreerdp",
-  "cleanup": [
-    "*.la",
-    "/include",
-    "/lib/cmake",
-    "/lib/pkgconfig"
-  ],
-  "finish-args": [
-    "--share=ipc",
-    "--socket=x11",
-    "--share=network",
-    "--socket=pulseaudio",
-    "--socket=cups",
-    "--socket=pcsc",
-    "--filesystem=xdg-download"
-  ],
-  "add-build-extensions": {
-    "org.freedesktop.Platform.openh264": {
-      "directory": "lib/openh264",
-      "version": "2.3.1",
-      "add-ld-path": "."
-    }
-  },
-  "modules": [
-    "shared-modules/libusb/libusb.json",
-    {
-      "name": "xprop",
-      "sources": [
-        {
-          "type": "archive",
-          "url": "https://xorg.freedesktop.org/releases/individual/app/xprop-1.2.6.tar.xz",
-          "sha256": "580b8525b12ecc0144aa16c88b0aafa76d2e799b44c8c6c50f9ce92788b5586e"
+    "app-id": "com.freerdp.FreeRDP",
+    "runtime": "org.freedesktop.Platform",
+    "runtime-version": "22.08",
+    "sdk": "org.freedesktop.Sdk",
+    "command": "xfreerdp",
+    "cleanup": [
+        "*.la",
+        "/include",
+        "/lib/cmake",
+        "/lib/pkgconfig"
+    ],
+    "finish-args": [
+        "--share=ipc",
+        "--socket=x11",
+        "--share=network",
+        "--socket=pulseaudio",
+        "--socket=cups",
+        "--socket=pcsc",
+        "--filesystem=xdg-download"
+    ],
+    "add-build-extensions": {
+        "org.freedesktop.Platform.openh264": {
+            "directory": "lib/openh264",
+            "version": "2.3.1",
+            "add-ld-path": "."
         }
-      ],
-      "cleanup": [
-        "/share/doc",
-        "/share/man"
-      ]
     },
-    {
-      "name": "pcsc",
-      "config-opts": [
-        "--disable-libsystemd",
-        "--enable-pic",
-        "--disable-libusb",
-        "--enable-shared",
-        "--with-systemdsystemunitdir=/app/lib/systemd/"
-      ],
-      "sources": [
+    "modules": [
+        "shared-modules/libusb/libusb.json",
         {
-          "type": "git",
-          "url": "https://github.com/LudovicRousseau/PCSC.git",
-          "tag": "1.9.9",
-          "commit": "15c16c7796607b1c8a2ce253d3f536918ab26b4a"
-        }
-      ],
-      "cleanup": [
-        "/share/doc",
-        "/share/man"
-      ]
-    },
-    {
-      "name": "openssl111",
-      "buildsystem": "simple",
-      "build-commands": [
-        "./config --prefix=/app",
-        "make -j $FLATPAK_BUILDER_N_JOBS",
-        "make install"
-      ],
-      "cleanup": [
-        "/share/doc",
-        "/share/man",
-        "/bin"
-      ],
-      "sources": [
+            "name": "xprop",
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://xorg.freedesktop.org/releases/individual/app/xprop-1.2.6.tar.xz",
+                    "sha256": "580b8525b12ecc0144aa16c88b0aafa76d2e799b44c8c6c50f9ce92788b5586e"
+                }
+            ],
+            "cleanup": [
+                "/share/doc",
+                "/share/man"
+            ]
+        },
         {
-          "type": "archive",
-          "url": "https://www.openssl.org/source/openssl-1.1.1t.tar.gz",
-          "sha256": "8dee9b24bdb1dcbf0c3d1e9b02fb8f6bf22165e807f45adeb7c9677536859d3b",
-          "x-checker-data": {
-              "type": "anitya",
-              "project-id": 20333,
-              "url-template": "https://www.openssl.org/source/openssl-$version.tar.gz"
-          }
-        }
-      ]
-    },
-    {
-      "name": "freerdp",
-      "buildsystem": "cmake-ninja",
-      "cleanup": [],
-      "config-opts": [
-        "-DCMAKE_VERBOSE_MAKEFILE=ON",
-        "-DCMAKE_BUILD_TYPE:STRING=RelWithDebInfo",
-        "-DCMAKE_INSTALL_LIBDIR:PATH=lib",
-        "-DCHANNEL_TSMF:BOOL=OFF",
-        "-DCHANNEL_URBDRC:BOOL=ON",
-        "-DBUILD_TESTING:BOOL=OFF",
-        "-DWITH_MANPAGES:BOOL=OFF",
-        "-DWITH_WAYLAND:BOOL=OFF",
-        "-DWITH_GSSAPI:BOOL=OFF",
-        "-DWITH_PCSC:BOOL=ON",
-        "-DWITH_PKCS11:BOOL=ON",
-        "-DWITH_SWSCALE:BOOL=ON",
-        "-DWITH_SERVER:BOOL=OFF",
-        "-DWITH_SAMPLE:BOOL=OFF",
-        "-DWITH_CUPS:BOOL=ON",
-        "-DWITH_FFMPEG:BOOL=OFF",
-        "-DWITH_DSP_FFMPEG:BOOL=OFF",
-        "-DWITH_FAAC:BOOL=OFF",
-        "-DWITH_FAAD2:BOOL=OFF",
-        "-DWITH_OSS:BOOL=OFF",
-        "-DWITH_PULSE:BOOL=ON"
-      ],
-      "post-install": [
-        "install -D resources/FreeRDP_Logo_Icon.svg /app/share/icons/hicolor/scalable/apps/FreeRDP_Icon.svg",
-        "install -D resources/FreeRDP_Logo_Icon.svg /app/share/icons/hicolor/scalable/apps/FreeRDP_Logo.svg",
-        "install -D resources/FreeRDP_Logo_Icon.svg /app/share/icons/hicolor/scalable/apps/FreeRDP_Logo_Icon.svg"
-      ],
-      "sources": [
+            "name": "pcsc",
+            "config-opts": [
+                "--disable-libsystemd",
+                "--enable-pic",
+                "--disable-libusb",
+                "--enable-shared",
+                "--with-systemdsystemunitdir=/app/lib/systemd/"
+            ],
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://github.com/LudovicRousseau/PCSC.git",
+                    "tag": "1.9.9",
+                    "commit": "15c16c7796607b1c8a2ce253d3f536918ab26b4a"
+                }
+            ],
+            "cleanup": [
+                "/share/doc",
+                "/share/man"
+            ]
+        },
         {
-          "type": "git",
-          "url": "https://github.com/FreeRDP/FreeRDP.git",
-          "tag": "2.10.0",
-          "commit": "7471ae383e7b7a613f275e19f7b54958a193c891"
-        }
-      ]
-    },
-    {
-      "name": "wrapper",
-      "buildsystem": "simple",
-      "build-commands": [
-        "install -D com.freerdp.FreeRDP.desktop /app/share/applications/com.freerdp.FreeRDP.desktop",
-        "install -D com.freerdp.FreeRDP.appdata.xml /app/share/appdata/com.freerdp.FreeRDP.appdata.xml",
-        "mkdir -p /app/lib/openh264"
-      ],
-      "sources": [
+            "name": "openssl111",
+            "buildsystem": "simple",
+            "build-commands": [
+                "./config --prefix=/app",
+                "make -j $FLATPAK_BUILDER_N_JOBS",
+                "make install"
+            ],
+            "cleanup": [
+                "/share/doc",
+                "/share/man",
+                "/bin"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://www.openssl.org/source/openssl-1.1.1v.tar.gz",
+                    "sha256": "d6697e2871e77238460402e9362d47d18382b15ef9f246aba6c7bd780d38a6b0",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 20333,
+                        "url-template": "https://www.openssl.org/source/openssl-$version.tar.gz"
+                    }
+                }
+            ]
+        },
         {
-          "type": "dir",
-          "path": "."
+            "name": "freerdp",
+            "buildsystem": "cmake-ninja",
+            "cleanup": [],
+            "config-opts": [
+                "-DCMAKE_VERBOSE_MAKEFILE=ON",
+                "-DCMAKE_BUILD_TYPE:STRING=RelWithDebInfo",
+                "-DCMAKE_INSTALL_LIBDIR:PATH=lib",
+                "-DCHANNEL_TSMF:BOOL=OFF",
+                "-DCHANNEL_URBDRC:BOOL=ON",
+                "-DBUILD_TESTING:BOOL=OFF",
+                "-DWITH_MANPAGES:BOOL=OFF",
+                "-DWITH_WAYLAND:BOOL=OFF",
+                "-DWITH_GSSAPI:BOOL=OFF",
+                "-DWITH_PCSC:BOOL=ON",
+                "-DWITH_PKCS11:BOOL=ON",
+                "-DWITH_SWSCALE:BOOL=ON",
+                "-DWITH_SERVER:BOOL=OFF",
+                "-DWITH_SAMPLE:BOOL=OFF",
+                "-DWITH_CUPS:BOOL=ON",
+                "-DWITH_FFMPEG:BOOL=OFF",
+                "-DWITH_DSP_FFMPEG:BOOL=OFF",
+                "-DWITH_FAAC:BOOL=OFF",
+                "-DWITH_FAAD2:BOOL=OFF",
+                "-DWITH_OSS:BOOL=OFF",
+                "-DWITH_PULSE:BOOL=ON"
+            ],
+            "post-install": [
+                "install -D resources/FreeRDP_Logo_Icon.svg /app/share/icons/hicolor/scalable/apps/FreeRDP_Icon.svg",
+                "install -D resources/FreeRDP_Logo_Icon.svg /app/share/icons/hicolor/scalable/apps/FreeRDP_Logo.svg",
+                "install -D resources/FreeRDP_Logo_Icon.svg /app/share/icons/hicolor/scalable/apps/FreeRDP_Logo_Icon.svg"
+            ],
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://github.com/FreeRDP/FreeRDP.git",
+                    "tag": "2.10.0",
+                    "commit": "7471ae383e7b7a613f275e19f7b54958a193c891"
+                }
+            ]
+        },
+        {
+            "name": "wrapper",
+            "buildsystem": "simple",
+            "build-commands": [
+                "install -D com.freerdp.FreeRDP.desktop /app/share/applications/com.freerdp.FreeRDP.desktop",
+                "install -D com.freerdp.FreeRDP.appdata.xml /app/share/appdata/com.freerdp.FreeRDP.appdata.xml",
+                "mkdir -p /app/lib/openh264"
+            ],
+            "sources": [
+                {
+                    "type": "dir",
+                    "path": "."
+                }
+            ]
         }
-      ]
-    }
-  ]
+    ]
 }
