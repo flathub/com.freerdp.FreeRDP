@@ -1,102 +1,103 @@
 {
-  "app-id": "com.freerdp.FreeRDP",
-  "runtime": "org.freedesktop.Platform",
-  "runtime-version": "22.08",
-  "sdk": "org.freedesktop.Sdk",
-  "command": "sdl-freerdp",
-  "cleanup": [
-    "*.la",
-    "/include",
-    "/lib/cmake",
-    "/lib/pkgconfig"
-  ],
-  "finish-args": [
-    "--share=ipc",
-    "--socket=wayland",
-    "--socket=fallback-x11",
-    "--share=network",
-    "--socket=pulseaudio",
-    "--socket=cups",
-    "--socket=pcsc",
-    "--device=dri",
-    "--filesystem=xdg-download"
-  ],
-  "add-build-extensions": {
-    "org.freedesktop.Platform.ffmpeg-full": {
-      "directory": "lib/ffmpeg",
-      "version": "22.08",
-      "add-ld-path": "."
-    },
-    "org.freedesktop.Platform.openh264": {
-      "directory": "lib/openh264",
-      "version": "2.3.1",
-      "add-ld-path": "."
-    }
-  },
-  "modules": [
-    "shared-modules/libusb/libusb.json",
-    "modules/SDL2-2.28.1-with-libdecor.json",
-    "modules/SDL2_ttf-2.20.2.json",
-    "modules/cJSON-1.7.16.json",
-    "modules/xprop-1.2.6.json",
-    "modules/pcsc-1.9.9.json", 
-    "modules/pkcs11-helper-1.29.0.json", 
-    "modules/krb5-1.21.1.json",
-    {
-      "name": "freerdp",
-      "buildsystem": "cmake-ninja",
-      "cleanup": [],
-      "config-opts": [
-        "-DCMAKE_VERBOSE_MAKEFILE=ON",
-        "-DCMAKE_BUILD_TYPE:STRING=RelWithDebInfo",
-        "-DCMAKE_INSTALL_LIBDIR:PATH=lib",
-        "-DCHANNEL_TSMF:BOOL=OFF",
-        "-DCHANNEL_URBDRC:BOOL=ON",
-        "-DBUILD_TESTING:BOOL=OFF",
-        "-DWITH_MANPAGES:BOOL=OFF",
-        "-DWITH_WAYLAND:BOOL=ON",
-        "-DWITH_PCSC:BOOL=ON",
-        "-DWITH_PKCS11:BOOL=ON",
-        "-DWITH_SWSCALE:BOOL=ON",
-        "-DWITH_SERVER:BOOL=ON",
-        "-DWITH_SAMPLE:BOOL=ON",
-        "-DWITH_CUPS:BOOL=ON",
-        "-DWITH_FFMPEG:BOOL=ON",
-        "-DWITH_DSP_FFMPEG:BOOL=ON",
-        "-DWITH_FAAC:BOOL=OFF",
-        "-DWITH_FAAD2:BOOL=OFF",
-        "-DWITH_OSS:BOOL=OFF",
-        "-DWITH_WEBVIEW:BOOL=OFF",
-        "-DWITH_PULSE:BOOL=ON"
-      ],
-      "post-install": [
-        "install -D resources/FreeRDP_Logo_Icon.svg /app/share/icons/hicolor/scalable/apps/FreeRDP_Icon.svg",
-        "install -D resources/FreeRDP_Logo_Icon.svg /app/share/icons/hicolor/scalable/apps/FreeRDP_Logo.svg",
-        "install -D resources/FreeRDP_Logo_Icon.svg /app/share/icons/hicolor/scalable/apps/FreeRDP_Logo_Icon.svg"
-      ],
-      "sources": [
-        {
-          "type": "git",
-          "url": "https://github.com/FreeRDP/FreeRDP.git",
-          "commit": "3.0.0-beta2"
+    "app-id": "com.freerdp.FreeRDP",
+    "runtime": "org.freedesktop.Platform",
+    "runtime-version": "22.08",
+    "sdk": "org.freedesktop.Sdk",
+    "command": "sdl-freerdp",
+    "cleanup": [
+        "*.la",
+        "/include",
+        "/lib/cmake",
+        "/lib/pkgconfig"
+    ],
+    "finish-args": [
+        "--share=ipc",
+        "--socket=wayland",
+        "--socket=fallback-x11",
+        "--share=network",
+        "--socket=pulseaudio",
+        "--socket=cups",
+        "--socket=pcsc",
+        "--device=dri",
+        "--filesystem=xdg-download"
+    ],
+    "add-build-extensions": {
+        "org.freedesktop.Platform.ffmpeg-full": {
+            "directory": "lib/ffmpeg",
+            "version": "22.08",
+            "add-ld-path": "."
+        },
+        "org.freedesktop.Platform.openh264": {
+            "directory": "lib/openh264",
+            "version": "2.3.1",
+            "add-ld-path": "."
         }
-      ]
     },
-    {
-      "name": "wrapper",
-      "buildsystem": "simple",
-      "build-commands": [
-        "install -D com.freerdp.FreeRDP.desktop /app/share/applications/com.freerdp.FreeRDP.desktop",
-        "install -D com.freerdp.FreeRDP.appdata.xml /app/share/appdata/com.freerdp.FreeRDP.appdata.xml",
-        "mkdir -p /app/lib/openh264",
-        "mkdir -p /app/lib/ffmpeg"
-      ],
-      "sources": [
+    "modules": [
+        "shared-modules/libusb/libusb.json",
+        "modules/SDL2-2.28.1-with-libdecor.json",
+        "modules/SDL2_ttf-2.20.2.json",
+        "modules/cJSON-1.7.16.json",
+        "modules/xprop-1.2.6.json",
+        "modules/pcsc-1.9.9.json",
+        "modules/pkcs11-helper-1.29.0.json",
+        "modules/krb5-1.21.1.json",
         {
-          "type": "dir",
-          "path": "."
+            "name": "freerdp",
+            "buildsystem": "cmake-ninja",
+            "cleanup": [],
+            "config-opts": [
+                "-DCMAKE_VERBOSE_MAKEFILE=ON",
+                "-DCMAKE_BUILD_TYPE:STRING=RelWithDebInfo",
+                "-DCMAKE_INSTALL_LIBDIR:PATH=lib",
+                "-DCHANNEL_TSMF:BOOL=OFF",
+                "-DCHANNEL_URBDRC:BOOL=ON",
+                "-DBUILD_TESTING:BOOL=OFF",
+                "-DWITH_MANPAGES:BOOL=OFF",
+                "-DWITH_WAYLAND:BOOL=ON",
+                "-DWITH_PCSC:BOOL=ON",
+                "-DWITH_PKCS11:BOOL=ON",
+                "-DWITH_SWSCALE:BOOL=ON",
+                "-DWITH_SERVER:BOOL=ON",
+                "-DWITH_SAMPLE:BOOL=ON",
+                "-DWITH_CUPS:BOOL=ON",
+                "-DWITH_FFMPEG:BOOL=ON",
+                "-DWITH_DSP_FFMPEG:BOOL=ON",
+                "-DWITH_FAAC:BOOL=OFF",
+                "-DWITH_FAAD2:BOOL=OFF",
+                "-DWITH_OSS:BOOL=OFF",
+                "-DWITH_WEBVIEW:BOOL=OFF",
+                "-DWITH_PULSE:BOOL=ON"
+            ],
+            "post-install": [
+                "install -D resources/FreeRDP_Logo_Icon.svg /app/share/icons/hicolor/scalable/apps/FreeRDP_Icon.svg",
+                "install -D resources/FreeRDP_Logo_Icon.svg /app/share/icons/hicolor/scalable/apps/FreeRDP_Logo.svg",
+                "install -D resources/FreeRDP_Logo_Icon.svg /app/share/icons/hicolor/scalable/apps/FreeRDP_Logo_Icon.svg"
+            ],
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://github.com/FreeRDP/FreeRDP.git",
+                    "tag": "3.0.0-beta3",
+                    "commit": "59a5726ab36338776539192cae2563951d0ce94b"
+                }
+            ]
+        },
+        {
+            "name": "wrapper",
+            "buildsystem": "simple",
+            "build-commands": [
+                "install -D com.freerdp.FreeRDP.desktop /app/share/applications/com.freerdp.FreeRDP.desktop",
+                "install -D com.freerdp.FreeRDP.appdata.xml /app/share/appdata/com.freerdp.FreeRDP.appdata.xml",
+                "mkdir -p /app/lib/openh264",
+                "mkdir -p /app/lib/ffmpeg"
+            ],
+            "sources": [
+                {
+                    "type": "dir",
+                    "path": "."
+                }
+            ]
         }
-      ]
-    }
-  ]
+    ]
 }

@@ -31,6 +31,12 @@
   <content_rating type="oars-1.0" />
 
   <releases>
+    <release version="3.0.0-beta3" type="beta" urgency="medium" date="2023-08-31">
+      <url>https://github.com/FreeRDP/FreeRDP/releases/tag/3.0.0-beta3</url>
+    </release>
+    <release version="3.0.0-beta2" type="beta" urgency="medium" date="2023-08-04">
+      <url>https://github.com/FreeRDP/FreeRDP/releases/tag/3.0.0-beta2</url>
+    </release>
     <release version="3.0.0-beta1" type="beta" urgency="medium" date="2023-07-21">
       <url>https://github.com/FreeRDP/FreeRDP/releases/tag/3.0.0-beta1</url>
     </release>
