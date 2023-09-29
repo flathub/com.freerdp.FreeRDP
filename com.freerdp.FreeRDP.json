@@ -41,6 +41,7 @@
         "modules/xprop-1.2.6.json",
         "modules/pcsc-1.9.9.json",
         "modules/pkcs11-helper-1.29.0.json",
+        "modules/opensc-0.23.0.json",
         "modules/krb5-1.21.1.json",
         {
             "name": "freerdp",
