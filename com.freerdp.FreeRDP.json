@@ -35,7 +35,7 @@
     },
     "modules": [
         "shared-modules/libusb/libusb.json",
-        "modules/SDL2-2.28.1-with-libdecor.json",
+        "shared-modules/SDL2/SDL2-with-libdecor.json",
         "modules/SDL2_ttf-2.20.2.json",
         "modules/cJSON-1.7.16.json",
         "modules/xprop-1.2.6.json",
