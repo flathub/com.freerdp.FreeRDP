@@ -1,7 +1,7 @@
 {
     "app-id": "com.freerdp.FreeRDP",
     "runtime": "org.freedesktop.Platform",
-    "runtime-version": "22.08",
+    "runtime-version": "23.08",
     "sdk": "org.freedesktop.Sdk",
     "command": "sdl-freerdp",
     "cleanup": [
@@ -24,7 +24,7 @@
     "add-build-extensions": {
         "org.freedesktop.Platform.ffmpeg-full": {
             "directory": "lib/ffmpeg",
-            "version": "22.08",
+            "version": "23.08",
             "add-ld-path": "."
         },
         "org.freedesktop.Platform.openh264": {
@@ -35,8 +35,6 @@
     },
     "modules": [
         "shared-modules/libusb/libusb.json",
-        "shared-modules/SDL2/SDL2-with-libdecor.json",
-        "modules/SDL2_ttf-2.20.2.json",
         "modules/cJSON-1.7.16.json",
         "modules/xprop-1.2.6.json",
         "modules/pcsc-1.9.9.json",
