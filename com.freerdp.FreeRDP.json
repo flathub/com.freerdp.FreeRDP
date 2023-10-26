@@ -54,6 +54,7 @@
                 "-DBUILD_TESTING:BOOL=OFF",
                 "-DWITH_MANPAGES:BOOL=OFF",
                 "-DWITH_WAYLAND:BOOL=ON",
+                "-DWITH_FUSE:BOOL=OFF",
                 "-DWITH_PCSC:BOOL=ON",
                 "-DWITH_PKCS11:BOOL=ON",
                 "-DWITH_SWSCALE:BOOL=ON",
