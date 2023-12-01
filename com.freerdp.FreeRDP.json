@@ -37,13 +37,15 @@
         "shared-modules/libusb/libusb.json",
         "modules/cJSON-1.7.16.json",
         "modules/xprop-1.2.6.json",
-        "modules/pcsc-1.9.9.json",
+        "modules/pcsc.json",
+        "modules/urlparser.json",
         "modules/pkcs11-helper-1.29.0.json",
         "modules/opensc-0.23.0.json",
         "modules/krb5-1.21.1.json",
         {
             "name": "freerdp",
             "buildsystem": "cmake-ninja",
+            "builddir": true,
             "cleanup": [],
             "config-opts": [
                 "-DCMAKE_VERBOSE_MAKEFILE=ON",
@@ -69,17 +71,12 @@
                 "-DWITH_WEBVIEW:BOOL=OFF",
                 "-DWITH_PULSE:BOOL=ON"
             ],
-            "post-install": [
-                "install -D resources/FreeRDP_Logo_Icon.svg /app/share/icons/hicolor/scalable/apps/FreeRDP_Icon.svg",
-                "install -D resources/FreeRDP_Logo_Icon.svg /app/share/icons/hicolor/scalable/apps/FreeRDP_Logo.svg",
-                "install -D resources/FreeRDP_Logo_Icon.svg /app/share/icons/hicolor/scalable/apps/FreeRDP_Logo_Icon.svg"
-            ],
             "sources": [
                 {
                     "type": "git",
                     "url": "https://github.com/FreeRDP/FreeRDP.git",
-                    "tag": "3.0.0-beta4",
-                    "commit": "1f284d3af8a8be5f88a0a5f426b2cd5059b9a60e"
+                    "tag": "3.0.0-rc0",
+                    "commit": "e6fffdb7b030da8880ce2314950606ec1203c54c"
                 }
             ]
         },
@@ -87,10 +84,13 @@
             "name": "wrapper",
             "buildsystem": "simple",
             "build-commands": [
-                "install -D com.freerdp.FreeRDP.desktop /app/share/applications/com.freerdp.FreeRDP.desktop",
-                "install -D com.freerdp.FreeRDP.appdata.xml /app/share/appdata/com.freerdp.FreeRDP.appdata.xml",
-                "mkdir -p /app/lib/openh264",
-                "mkdir -p /app/lib/ffmpeg"
+                "install -D com.freerdp.FreeRDP.desktop $FLATPAK_DEST/share/applications/com.freerdp.FreeRDP.desktop",
+                "install -D com.freerdp.FreeRDP.appdata.xml $FLATPAK_DEST/share/appdata/com.freerdp.FreeRDP.appdata.xml",
+                "mkdir -p $FLATPAK_DEST/lib/openh264",
+                "mkdir -p $FLATPAK_DEST/lib/ffmpeg",
+                "install -D FreeRDP_Logo_Icon.svg $FLATPAK_DEST/share/icons/hicolor/scalable/apps/FreeRDP_Icon.svg",
+                "install -D FreeRDP_Logo_Icon.svg $FLATPAK_DEST/share/icons/hicolor/scalable/apps/FreeRDP_Logo.svg",
+                "install -D FreeRDP_Logo_Icon.svg $FLATPAK_DEST/share/icons/hicolor/scalable/apps/FreeRDP_Logo_Icon.svg"
             ],
             "sources": [
                 {
