@@ -71,11 +71,6 @@
                 "-DWITH_WEBVIEW:BOOL=OFF",
                 "-DWITH_PULSE:BOOL=ON"
             ],
-            "post-install": [
-                "install -D resources/FreeRDP_Logo_Icon.svg /app/share/icons/hicolor/scalable/apps/FreeRDP_Icon.svg",
-                "install -D resources/FreeRDP_Logo_Icon.svg /app/share/icons/hicolor/scalable/apps/FreeRDP_Logo.svg",
-                "install -D resources/FreeRDP_Logo_Icon.svg /app/share/icons/hicolor/scalable/apps/FreeRDP_Logo_Icon.svg"
-            ],
             "sources": [
                 {
                     "type": "git",
@@ -89,10 +84,13 @@
             "name": "wrapper",
             "buildsystem": "simple",
             "build-commands": [
-                "install -D com.freerdp.FreeRDP.desktop /app/share/applications/com.freerdp.FreeRDP.desktop",
-                "install -D com.freerdp.FreeRDP.appdata.xml /app/share/appdata/com.freerdp.FreeRDP.appdata.xml",
-                "mkdir -p /app/lib/openh264",
-                "mkdir -p /app/lib/ffmpeg"
+                "install -D com.freerdp.FreeRDP.desktop $FLATPAK_DEST/share/applications/com.freerdp.FreeRDP.desktop",
+                "install -D com.freerdp.FreeRDP.appdata.xml $FLATPAK_DEST/share/appdata/com.freerdp.FreeRDP.appdata.xml",
+                "mkdir -p $FLATPAK_DEST/lib/openh264",
+                "mkdir -p $FLATPAK_DEST/lib/ffmpeg",
+                "install -D FreeRDP_Logo_Icon.svg $FLATPAK_DEST/share/icons/hicolor/scalable/apps/FreeRDP_Icon.svg",
+                "install -D FreeRDP_Logo_Icon.svg $FLATPAK_DEST/share/icons/hicolor/scalable/apps/FreeRDP_Logo.svg",
+                "install -D FreeRDP_Logo_Icon.svg $FLATPAK_DEST/share/icons/hicolor/scalable/apps/FreeRDP_Logo_Icon.svg"
             ],
             "sources": [
                 {
