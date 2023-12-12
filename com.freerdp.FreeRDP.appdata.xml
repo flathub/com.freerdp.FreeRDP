@@ -14,7 +14,7 @@
     <category>Utility</category>
     <category>RemoteAccess</category>
   </categories>
-  <developer_name>FreeRDP develpers</developer_name>
+  <developer_name>FreeRDP developers</developer_name>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>Apache-2.0</project_license>
   <url type="homepage">https://www.freerdp.com/</url>
@@ -31,6 +31,9 @@
   <content_rating type="oars-1.0" />
 
   <releases>
+    <release version="3.0.0" type="stable" urgency="medium" date="2023-12-12">
+      <url>https://github.com/FreeRDP/FreeRDP/releases/tag/3.0.0</url>
+    </release>
     <release version="3.0.0-rc0" type="beta" urgency="medium" date="2023-11-27">
       <url>https://github.com/FreeRDP/FreeRDP/releases/tag/3.0.0-rc0</url>
     </release>

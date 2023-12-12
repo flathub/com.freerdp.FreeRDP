@@ -75,8 +75,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/FreeRDP/FreeRDP.git",
-                    "tag": "3.0.0-rc0",
-                    "commit": "e6fffdb7b030da8880ce2314950606ec1203c54c"
+                    "tag": "3.0.0",
+                    "commit": "a34fa7c49d2a39aa49ace1d7bea9656912d8c7cb"
                 }
             ]
         },
