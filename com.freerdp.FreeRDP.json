@@ -68,6 +68,7 @@
                 "-DWITH_FAAC:BOOL=OFF",
                 "-DWITH_FAAD2:BOOL=OFF",
                 "-DWITH_OSS:BOOL=OFF",
+                "-DWITH_SDL_IMAGE_DIALOGS:BOOL=ON",
                 "-DWITH_WEBVIEW:BOOL=OFF",
                 "-DWITH_PULSE:BOOL=ON"
             ],
