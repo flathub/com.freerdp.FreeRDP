@@ -39,7 +39,7 @@
         "modules/xprop-1.2.6.json",
         "modules/pcsc.json",
         "modules/urlparser.json",
-        "modules/pkcs11-helper-1.29.0.json",
+        "modules/pkcs11-helper.json",
         "modules/opensc-0.23.0.json",
         "modules/krb5.json",
         {
