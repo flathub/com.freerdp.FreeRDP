@@ -4,8 +4,8 @@
     "sources": [
         {
             "type": "archive",
-            "url": "https://github.com/OpenSC/pkcs11-helper/archive/refs/tags/pkcs11-helper-1.29.0.tar.gz",
-            "sha256": "f87c4ce596ccf6211c0de34923e2977c8892bd773ace75d1261a1908979fc9e8",
+            "url": "https://github.com/OpenSC/pkcs11-helper/archive/refs/tags/pkcs11-helper-1.30.0.tar.gz",
+            "sha256": "076c9f664812a45f2da25efc157338b0b8bb1949117f0144050fec176b6fdf78",
             "x-checker-data": {
                 "type": "anitya",
                 "project-id": 91990,
