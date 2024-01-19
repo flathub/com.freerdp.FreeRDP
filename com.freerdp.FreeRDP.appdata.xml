@@ -31,6 +31,9 @@
   <content_rating type="oars-1.0" />
 
   <releases>
+    <release version="3.2.0" type="stable" urgency="medium" date="2024-01-19">
+      <url>https://github.com/FreeRDP/FreeRDP/releases/tag/3.2.0</url>
+    </release>
     <release version="3.1.0" type="stable" urgency="medium" date="2023-12-21">
       <url>https://github.com/FreeRDP/FreeRDP/releases/tag/3.1.0</url>
     </release>
