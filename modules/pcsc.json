@@ -5,14 +5,21 @@
         "--enable-pic",
         "--disable-libusb",
         "--enable-shared",
+        "--disable-polkit",
         "--with-systemdsystemunitdir=/app/lib/systemd/"
       ],
       "sources": [
         {
-          "type": "git",
-          "url": "https://github.com/LudovicRousseau/PCSC.git",
-          "tag": "2.0.0",
-          "commit": "549922c1355fdd1e85eb0a952fefda7bb96e286a"
+           "type": "git",
+           "url": "https://github.com/LudovicRousseau/PCSC.git",
+           "tag": "2.0.1",
+           "commit": "932d77d7c93c39d8308451497425db1962f53b55",
+           "x-checker-data": {
+               "type": "anitya",
+               "project-id": 2611,
+               "stable-only": true,
+               "url-template": "https://github.com/LudovicRousseau/PCSC/tags/${version0}.${version1}.${version2}"
+           }
         }
       ],
       "cleanup": [
