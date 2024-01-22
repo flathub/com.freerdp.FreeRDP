@@ -1,0 +1,25 @@
+{
+      "name": "cjson",
+      "buildsystem": "cmake-ninja",
+      "cleanup": [
+      ],
+      "config-opts": [
+        "-DCMAKE_VERBOSE_MAKEFILE=ON",
+        "-DCMAKE_BUILD_TYPE:STRING=Release",
+        "-DCMAKE_INSTALL_LIBDIR:PATH=lib",
+        "-DWITH_PULSE:BOOL=ON"
+      ],
+      "sources": [
+        {
+          "type": "archive",
+          "url": "https://github.com/DaveGamble/cJSON/archive/refs/tags/v1.7.17.tar.gz",
+          "sha256": "c91d1eeb7175c50d49f6ba2a25e69b46bd05cffb798382c19bfb202e467ec51c",
+          "x-checker-data": {
+                "type": "anitya",
+                "project-id": 21330,
+                "stable-only": true,
+                "url-template": "https://github.com/DaveGamble/cJSON/archive/refs/tags/v${version0}.${version1}.${version2}.tar.gz"
+            }
+        }
+      ]
+}

@@ -1,0 +1,21 @@
+{
+      "name": "opensc",
+      "buildsystem": "autotools",
+      "cleanup": [
+      ],
+      "config-opts": [
+      ],
+      "sources": [
+        {
+          "type": "archive",
+          "url": "https://github.com/OpenSC/OpenSC/releases/download/0.24.0/opensc-0.24.0.tar.gz",
+          "sha256": "24d03c69287291da32a30c4c38a304ad827f56cb85d83619e1f5403ab6480ef8",
+          "x-checker-data": {
+              "type": "anitya",
+              "project-id": 13287,
+              "stable-only": true,
+              "url-template": "https://github.com/OpenSC/OpenSC/tags/${version0}.${version1}.${version2}"
+          }
+        }
+      ]
+}
