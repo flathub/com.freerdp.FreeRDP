@@ -29,7 +29,7 @@
         },
         "org.freedesktop.Platform.openh264": {
             "directory": "lib/openh264",
-            "version": "2.3.1",
+            "version": "2.4.1",
             "add-ld-path": "."
         }
     },
@@ -66,6 +66,9 @@
                 "-DWITH_FFMPEG:BOOL=ON",
                 "-DWITH_DSP_FFMPEG:BOOL=ON",
                 "-DWITH_FAAC:BOOL=OFF",
+                "-DWINPR_UTILS_IMAGE_PNG:BOOL=ON",
+                "-DWINPR_UTILS_IMAGE_WEBP:BOOL=ON",
+                "-DWINPR_UTILS_IMAGE_JPEG:BOOL=ON",
                 "-DWITH_FAAD2:BOOL=OFF",
                 "-DWITH_OSS:BOOL=OFF",
                 "-DWITH_SDL_IMAGE_DIALOGS:BOOL=ON",
@@ -76,13 +79,13 @@
                 {
                     "type": "git",
                     "url": "https://github.com/FreeRDP/FreeRDP.git",
-                    "tag": "3.2.0",
-                    "commit": "bb87d4ca5072c40e83ed92130a6674bf245d1f2f",
+                    "tag": "3.3.0",
+                    "commit": "a1d8b550488251526823756cff3761f358667085",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 10442,
                         "stable-only": true,
-                        "url-template": "https://github.com/FreeRDP/FreeRDP/tags/${version0}.${version1}.${version2}"
+                        "url-template": "https://github.com/FreeRDP/FreeRDP/releases/tag/${version0}.${version1}.${version2}"
                     }
                 }
             ]
