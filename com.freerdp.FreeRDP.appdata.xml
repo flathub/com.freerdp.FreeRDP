@@ -30,7 +30,25 @@
 
   <content_rating type="oars-1.0" />
 
+  <icon type="stock">FreeRDP_Icon</icon>
+
+  <launchable type="desktop-id">com.freerdp.FreeRDP.desktop</launchable>
+
+  <provides>
+      <binary>sdl-freerdp</binary>
+      <binary>xfreerdp</binary>
+      <binary>wlfreerdp</binary>
+      <binary>freerdp-proxy</binary>
+      <binary>freerdpi-shadow-cli</binary>
+      <binary>sfreerdp</binary>
+      <binary>winpr-hash</binary>
+      <binary>winpr-makecert</binary>
+  </provides>
+
   <releases>
+    <release version="3.3.0" type="stable" urgency="medium" date="2024-02-22">
+      <url>https://github.com/FreeRDP/FreeRDP/releases/tag/3.3.0</url>
+    </release>
     <release version="3.2.0" type="stable" urgency="medium" date="2024-01-19">
       <url>https://github.com/FreeRDP/FreeRDP/releases/tag/3.2.0</url>
     </release>
