@@ -5,10 +5,16 @@
     "sdk": "org.freedesktop.Sdk",
     "command": "sdl-freerdp",
     "cleanup": [
-        "*.la",
+        "/lib/*.a",
+        "/lib/*.la",
+        "/lib/*.so",
         "/include",
         "/lib/cmake",
-        "/lib/pkgconfig"
+        "/lib/pkgconfig",
+        "/sbin",
+        "/share/doc",
+        "/share/examples",
+        "/share/man"
     ],
     "finish-args": [
         "--share=ipc",
@@ -34,6 +40,7 @@
         }
     },
     "modules": [
+        "modules/openssl.json",
         "shared-modules/libusb/libusb.json",
         "modules/cJSON.json",
         "modules/xprop.json",
