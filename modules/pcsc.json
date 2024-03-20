@@ -12,8 +12,8 @@
         {
            "type": "git",
            "url": "https://github.com/LudovicRousseau/PCSC.git",
-           "tag": "2.0.1",
-           "commit": "932d77d7c93c39d8308451497425db1962f53b55",
+           "tag": "2.0.3",
+           "commit": "c4e7f6f9c6fe56fafd3f13c31fcc4f670ad6d022",
            "x-checker-data": {
                "type": "anitya",
                "project-id": 2611,
