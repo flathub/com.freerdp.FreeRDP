@@ -30,7 +30,7 @@
 
   <content_rating type="oars-1.0" />
 
-  <icon type="stock">FreeRDP_Icon</icon>
+  <icon type="stock">com.freerdp.FreeRDP</icon>
 
   <launchable type="desktop-id">com.freerdp.FreeRDP.desktop</launchable>
 

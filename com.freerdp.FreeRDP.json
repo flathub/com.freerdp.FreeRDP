@@ -107,7 +107,8 @@
                 "mkdir -p $FLATPAK_DEST/lib/ffmpeg",
                 "install -D FreeRDP_Logo_Icon.svg $FLATPAK_DEST/share/icons/hicolor/scalable/apps/FreeRDP_Icon.svg",
                 "install -D FreeRDP_Logo_Icon.svg $FLATPAK_DEST/share/icons/hicolor/scalable/apps/FreeRDP_Logo.svg",
-                "install -D FreeRDP_Logo_Icon.svg $FLATPAK_DEST/share/icons/hicolor/scalable/apps/FreeRDP_Logo_Icon.svg"
+                "install -D FreeRDP_Logo_Icon.svg $FLATPAK_DEST/share/icons/hicolor/scalable/apps/FreeRDP_Logo_Icon.svg",
+                "install -D FreeRDP_Logo_Icon.svg $FLATPAK_DEST/share/icons/hicolor/scalable/apps/com.freerdp.FreeRDP.svg"
             ],
             "sources": [
                 {
