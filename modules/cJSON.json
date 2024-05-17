@@ -1,6 +1,7 @@
 {
     "name": "cjson",
     "buildsystem": "cmake-ninja",
+    "builddir": true,
     "cleanup": [],
     "config-opts": [
         "-DCMAKE_VERBOSE_MAKEFILE=ON",

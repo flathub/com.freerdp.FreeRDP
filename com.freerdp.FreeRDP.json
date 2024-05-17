@@ -42,6 +42,9 @@
     "modules": [
         "modules/openssl.json",
         "shared-modules/libusb/libusb.json",
+        "shared-modules/SDL2/SDL2-with-libdecor.json",
+        "modules/SDL2_ttf.json",
+        "modules/SDL2_image.json",
         "modules/cJSON.json",
         "modules/xprop.json",
         "modules/pcsc.json",
