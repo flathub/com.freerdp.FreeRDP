@@ -1,0 +1,31 @@
+{
+  "name": "SDL2_ttf",
+  "buildsystem": "cmake-ninja",
+  "builddir": true,
+  "config-opts": [
+        "-DCMAKE_VERBOSE_MAKEFILE=ON",
+        "-DCMAKE_BUILD_TYPE:STRING=Release",
+        "-DCMAKE_INSTALL_LIBDIR:PATH=lib"
+	],
+  "sources": [
+    {
+      "type": "archive",
+      "url": "https://github.com/libsdl-org/SDL_ttf/releases/download/release-2.22.0/SDL2_ttf-2.22.0.tar.gz",
+      "sha256": "d48cbd1ce475b9e178206bf3b72d56b66d84d44f64ac05803328396234d67723",
+            "x-checker-data": {
+                "type": "anitya",
+                "project-id": 4784,
+                "stable-only": true,
+                "url-template": "https://github.com/libsdl-org/SDL_ttf/releases/download/release-${version0}.${version1}.${version2}/SDL2_ttf-${version0}.${version1}.${version2}.tar.gz"
+            }
+    }
+  ],
+  "cleanup": [ 
+               "/include",
+               "/lib/*.la",
+               "/lib/*.a",
+               "/lib/cmake",
+               "/share/aclocal",
+               "/lib/pkgconfig"
+  ]
+}
