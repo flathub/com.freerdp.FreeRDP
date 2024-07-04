@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="console-application">
   <id>com.freerdp.FreeRDP</id>
-   <name>FreeRDP Remote Desktop Client</name>
-  <summary>FreeRDP (Remote Desktop Protocol) Client for Linux</summary>
+   <name>FreeRDP Client</name>
+  <summary>Remote Desktop Protocol Client</summary>
   <description>
       <p>
 				FreeRDP flatpak provides xfreerdp client for systems lacking proper H264 support.
@@ -46,6 +46,9 @@
   </provides>
 
   <releases>
+    <release version="3.6.2" type="stable" urgency="medium" date="2024-07-04">
+      <url>https://github.com/FreeRDP/FreeRDP/releases/tag/3.6.2</url>
+    </release>
     <release version="3.5.1" type="stable" urgency="medium" date="2024-04-22">
       <url>https://github.com/FreeRDP/FreeRDP/releases/tag/3.5.1</url>
     </release>
