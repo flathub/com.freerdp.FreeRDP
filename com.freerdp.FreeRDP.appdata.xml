@@ -46,6 +46,9 @@
   </provides>
 
   <releases>
+    <release version="3.8.0" type="stable" urgency="medium" date="2024-08-30">
+      <url>https://github.com/FreeRDP/FreeRDP/releases/tag/3.8.0</url>
+    </release>
     <release version="3.7.0" type="stable" urgency="medium" date="2024-08-08">
       <url>https://github.com/FreeRDP/FreeRDP/releases/tag/3.7.0</url>
     </release>
