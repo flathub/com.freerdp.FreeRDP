@@ -1,7 +1,7 @@
 {
     "app-id": "com.freerdp.FreeRDP",
     "runtime": "org.freedesktop.Platform",
-    "runtime-version": "23.08",
+    "runtime-version": "24.08",
     "sdk": "org.freedesktop.Sdk",
     "command": "sdl-freerdp",
     "cleanup": [
@@ -30,7 +30,7 @@
     "add-build-extensions": {
         "org.freedesktop.Platform.ffmpeg-full": {
             "directory": "lib/ffmpeg",
-            "version": "23.08",
+            "version": "24.08",
             "add-ld-path": "."
         },
         "org.freedesktop.Platform.openh264": {
@@ -40,9 +40,7 @@
         }
     },
     "modules": [
-        "modules/openssl.json",
         "shared-modules/libusb/libusb.json",
-        "shared-modules/SDL2/SDL2-with-libdecor.json",
         "modules/SDL2_ttf.json",
         "modules/SDL2_image.json",
         "modules/cJSON.json",
@@ -91,8 +89,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/FreeRDP/FreeRDP.git",
-                    "tag": "3.8.0",
-                    "commit": "b44ae30a18a471c50806780dc5f1d291b749b6b9",
+                    "tag": "3.9.0",
+                    "commit": "4ae5b6c25452211f01f370d3e6e481553e72778a",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 10442,
