@@ -1,0 +1,25 @@
+{
+      "name": "opensc",
+      "buildsystem": "autotools",
+      "cleanup": [
+      ],
+      "config-opts": [
+          "--disable-assert",
+          "--disable-fuzzing",
+          "--disable-man",
+          "--disable-strict"
+      ],
+      "sources": [
+        {
+          "type": "archive",
+          "url": "https://github.com/OpenSC/OpenSC/releases/download/0.25.1/opensc-0.25.1.tar.gz",
+          "sha256": "23cbaae8bd7c8eb589b68c0a961dfb0d02007bea3165a3fc5efe2621d549b37b",
+          "x-checker-data": {
+              "type": "anitya",
+              "project-id": 13287,
+              "stable-only": true,
+              "url-template": "https://github.com/OpenSC/OpenSC/tags/${version0}.${version1}.${version2}"
+          }
+        }
+      ]
+}

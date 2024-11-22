@@ -1,0 +1,26 @@
+{
+    "name": "urlparser",
+    "buildsystem": "cmake-ninja",
+    "builddir": true,
+    "cleanup": [],
+    "config-opts": [
+        "-DCMAKE_VERBOSE_MAKEFILE=ON",
+        "-DCMAKE_BUILD_TYPE:STRING=Release",
+        "-DCMAKE_INSTALL_LIBDIR:PATH=lib",
+        "-DURIPARSER_BUILD_DOCS:BOOL=OFF",
+        "-DURIPARSER_BUILD_TESTS:BOOL=OFF"
+    ],
+    "sources": [
+        {
+            "type": "archive",
+            "url": "https://github.com/uriparser/uriparser/releases/download/uriparser-0.9.8/uriparser-0.9.8.tar.xz",
+            "sha256": "1d71c054837ea32a31e462bce5a1af272379ecf511e33448e88100b87ff73b2e",
+            "x-checker-data": {
+                "type": "anitya",
+                "project-id": 10160,
+                "stable-only": true,
+                "url-template": "https://github.com/uriparser/uriparser/releases/download/uriparser-${version0}.${version1}.${version2}/uriparser-${version0}.${version1}.${version2}.tar.xz"
+            }
+        }
+    ]
+}
