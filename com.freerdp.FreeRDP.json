@@ -89,8 +89,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/FreeRDP/FreeRDP.git",
-                    "tag": "3.9.0",
-                    "commit": "4ae5b6c25452211f01f370d3e6e481553e72778a",
+                    "tag": "3.10.0",
+                    "commit": "6e662fdb35f9aefb319fa90a5f0f34b83941774f",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 10442,
