@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="console-application">
   <id>com.freerdp.FreeRDP</id>
-   <name>FreeRDP Client</name>
+  <name>FreeRDP Client</name>
   <summary>Remote Desktop Protocol Client</summary>
   <description>
-      <p>
-				FreeRDP flatpak provides xfreerdp client for systems lacking proper H264 support.
-				This build is focused on compatibility with windows RDP servers and ships custom OpenSSL 1.1.1 to allow working connections to older systems like Windows 7 or Server 2008
+    <p>
+      FreeRDP Flatpak provides xfreerdp client for systems lacking proper H264 support.
+      This build is focused on compatibility with Windows RDP servers and ships custom OpenSSL 1.1.1 to allow working connections to older systems like Windows 7 or Server 2008.
     </p>
   </description>
-   <categories>
+  <categories>
     <category>Network</category>
     <category>Utility</category>
     <category>RemoteAccess</category>
@@ -22,10 +22,10 @@
   <url type="faq">https://github.com/FreeRDP/FreeRDP/wiki/FAQ</url>
   <url type="help">https://github.com/FreeRDP/FreeRDP/wiki</url>
   <screenshots>
-      <screenshot type="default">
-            <caption>Choose between a full desktop session or a seamlessly integrated remote application</caption>
-            <image>https://www.freerdp.com/img/freerdp_main_screenshot1.png</image>
-        </screenshot>
+    <screenshot type="default">
+      <caption>Choose between a full desktop session or a seamlessly integrated remote application</caption>
+      <image>https://www.freerdp.com/img/freerdp_main_screenshot1.png</image>
+    </screenshot>
   </screenshots>
 
   <content_rating type="oars-1.0" />
@@ -35,14 +35,14 @@
   <launchable type="desktop-id">com.freerdp.FreeRDP.desktop</launchable>
 
   <provides>
-      <binary>sdl-freerdp</binary>
-      <binary>xfreerdp</binary>
-      <binary>wlfreerdp</binary>
-      <binary>freerdp-proxy</binary>
-      <binary>freerdpi-shadow-cli</binary>
-      <binary>sfreerdp</binary>
-      <binary>winpr-hash</binary>
-      <binary>winpr-makecert</binary>
+    <binary>sdl-freerdp</binary>
+    <binary>xfreerdp</binary>
+    <binary>wlfreerdp</binary>
+    <binary>freerdp-proxy</binary>
+    <binary>freerdpi-shadow-cli</binary>
+    <binary>sfreerdp</binary>
+    <binary>winpr-hash</binary>
+    <binary>winpr-makecert</binary>
   </provides>
 
   <releases>
