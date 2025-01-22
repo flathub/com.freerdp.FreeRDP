@@ -3,7 +3,7 @@
     "runtime": "org.freedesktop.Platform",
     "runtime-version": "24.08",
     "sdk": "org.freedesktop.Sdk",
-    "command": "sdl-freerdp",
+    "command": "freerdp-run.sh",
     "cleanup": [
         "/lib/*.a",
         "/lib/*.la",
@@ -74,8 +74,12 @@
                 "-DWITH_SSE2:BOOL=ON",
                 "-DWITH_NEON:BOOL=ON",
                 "-DWITH_FFMPEG:BOOL=ON",
+                "-DWITH_VERBOSE_WINPR_ASSERT:BOOL=OFF",
                 "-DWITH_DSP_FFMPEG:BOOL=ON",
                 "-DWITH_FAAC:BOOL=OFF",
+                "-DWITH_INTERNAL_MD4:BOOL=ON",
+                "-DWITH_INTERNAL_MD5:BOOL=ON",
+                "-DWITH_INTERNAL_RC4:BOOL=ON",
                 "-DWINPR_UTILS_IMAGE_PNG:BOOL=ON",
                 "-DWINPR_UTILS_IMAGE_WEBP:BOOL=ON",
                 "-DWINPR_UTILS_IMAGE_JPEG:BOOL=ON",
@@ -89,8 +93,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/FreeRDP/FreeRDP.git",
-                    "tag": "3.10.2",
-                    "commit": "ea2a3ee1b6ee622171669df3814aeca70a496c31",
+                    "tag": "3.10.3",
+                    "commit": "1f168a62db864f7b676964ca3f399ec76a4ae91c",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 10442,
@@ -106,6 +110,8 @@
             "build-commands": [
                 "install -D com.freerdp.FreeRDP.desktop $FLATPAK_DEST/share/applications/com.freerdp.FreeRDP.desktop",
                 "install -D com.freerdp.FreeRDP.appdata.xml $FLATPAK_DEST/share/appdata/com.freerdp.FreeRDP.appdata.xml",
+                "install -D legacy-openssl.cnf $FLATPAK_DEST/share/legacy-openssl.cnf",
+                "install -D freerdp-run.sh $FLATPAK_DEST/bin/freerdp-run.sh",
                 "mkdir -p $FLATPAK_DEST/lib/openh264",
                 "mkdir -p $FLATPAK_DEST/lib/ffmpeg",
                 "install -D FreeRDP_Logo_Icon.svg $FLATPAK_DEST/share/icons/hicolor/scalable/apps/FreeRDP_Icon.svg",
