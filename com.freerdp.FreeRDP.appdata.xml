@@ -46,6 +46,9 @@
   </provides>
 
   <releases>
+    <release version="3.12.0" type="stable" urgency="medium" date="2025-02-14">
+      <url>https://github.com/FreeRDP/FreeRDP/releases/tag/3.12.0</url>
+    </release>
     <release version="3.11.1" type="stable" urgency="medium" date="2025-02-07">
       <url>https://github.com/FreeRDP/FreeRDP/releases/tag/3.11.1</url>
     </release>
