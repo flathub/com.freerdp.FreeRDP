@@ -41,8 +41,9 @@
     },
     "modules": [
         "shared-modules/libusb/libusb.json",
-        "modules/SDL2_ttf.json",
-        "modules/SDL2_image.json",
+        "modules/SDL3.json",
+        "modules/SDL3_ttf.json",
+        "modules/SDL3_image.json",
         "modules/cJSON.json",
         "modules/xprop.json",
         "modules/pcsc.json",
@@ -85,6 +86,8 @@
                 "-DWINPR_UTILS_IMAGE_JPEG:BOOL=ON",
                 "-DWITH_FAAD2:BOOL=OFF",
                 "-DWITH_OSS:BOOL=OFF",
+                "-DWITH_CLIENT_SDL2:BOOL=OFF",
+                "-DWITH_CLIENT_SDL3:BOOL=ON",
                 "-DWITH_SDL_IMAGE_DIALOGS:BOOL=ON",
                 "-DWITH_WEBVIEW:BOOL=OFF",
                 "-DWITH_PULSE:BOOL=ON"
