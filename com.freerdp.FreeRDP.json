@@ -35,7 +35,7 @@
         },
         "org.freedesktop.Platform.openh264": {
             "directory": "lib/openh264",
-            "version": "2.4.1",
+            "version": "2.5.1",
             "add-ld-path": "."
         }
     },
@@ -96,8 +96,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/FreeRDP/FreeRDP.git",
-                    "tag": "3.13.0",
-                    "commit": "544d58661547838a8a25610c65489cde4da072d5",
+                    "tag": "3.14.0",
+                    "commit": "cd0a17f8607ec7ed310d39aa48ac9a5caf640592",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 10442,
