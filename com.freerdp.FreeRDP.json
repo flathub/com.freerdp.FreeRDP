@@ -94,14 +94,14 @@
             ],
             "sources": [
                 {
-                    "type": "git",
-                    "url": "https://github.com/FreeRDP/FreeRDP.git",
-                    "commit": "655f88d24b9aa8975b72d36023bc850e4139a23e",
+                    "type": "archive",
+                    "url": "https://pub.freerdp.com/releases/freerdp-3.15.0.tar.xz",
+                    "sha256": "1dc89c26e05f539bb2614e83eef5bea8d05a49d4fbc5dec4e4a33448ad5240d8",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 10442,
                         "stable-only": true,
-                        "url-template": "https://github.com/FreeRDP/FreeRDP/releases/tag/${version0}.${version1}.${version2}"
+                        "url-template": "https://pub.freerdp.com/releases/freerdp-${version0}.${version1}.${version2}.tar.xz"
                     }
                 }
             ]
