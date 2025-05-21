@@ -3,7 +3,7 @@
     "runtime": "org.freedesktop.Platform",
     "runtime-version": "24.08",
     "sdk": "org.freedesktop.Sdk",
-    "command": "freerdp-run.sh",
+    "command": "sdl-freerdp",
     "cleanup": [
         "/lib/*.a",
         "/lib/*.la",
@@ -25,7 +25,8 @@
         "--socket=cups",
         "--socket=pcsc",
         "--device=dri",
-        "--filesystem=xdg-download"
+        "--filesystem=xdg-download",
+        "--env=OPENSSL_CONF=/app/share/legacy-openssl.cnf"
     ],
     "add-build-extensions": {
         "org.freedesktop.Platform.ffmpeg-full": {
@@ -58,6 +59,7 @@
             "cleanup": [],
             "config-opts": [
                 "-DCMAKE_VERBOSE_MAKEFILE=ON",
+                "-DWITHOUT_FREERDP_3x_DEPRECATED=ON",
                 "-DCMAKE_BUILD_TYPE:STRING=RelWithDebInfo",
                 "-DCMAKE_INSTALL_LIBDIR:PATH=lib",
                 "-DCHANNEL_TSMF:BOOL=OFF",
@@ -113,7 +115,6 @@
                 "install -D com.freerdp.FreeRDP.desktop $FLATPAK_DEST/share/applications/com.freerdp.FreeRDP.desktop",
                 "install -D com.freerdp.FreeRDP.appdata.xml $FLATPAK_DEST/share/appdata/com.freerdp.FreeRDP.appdata.xml",
                 "install -D legacy-openssl.cnf $FLATPAK_DEST/share/legacy-openssl.cnf",
-                "install -D freerdp-run.sh $FLATPAK_DEST/bin/freerdp-run.sh",
                 "mkdir -p $FLATPAK_DEST/lib/openh264",
                 "mkdir -p $FLATPAK_DEST/lib/ffmpeg",
                 "install -D FreeRDP_Logo_Icon.svg $FLATPAK_DEST/share/icons/hicolor/scalable/apps/FreeRDP_Icon.svg",
