@@ -21,6 +21,7 @@
   <url type="contact">https://www.freerdp.com/</url>
   <url type="faq">https://github.com/FreeRDP/FreeRDP/wiki/FAQ</url>
   <url type="help">https://github.com/FreeRDP/FreeRDP/wiki</url>
+  <url type="vcs-browser">https://github.com/FreeRDP/FreeRDP</url>
   <screenshots>
     <screenshot type="default">
       <caption>Choose between a full desktop session or a seamlessly integrated remote application</caption>
