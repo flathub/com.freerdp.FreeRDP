@@ -10,8 +10,8 @@
     "sources": [
         {
             "type": "archive",
-            "url": "https://github.com/libsdl-org/SDL/releases/download/release-3.2.10/SDL3-3.2.10.tar.gz",
-            "sha256": "f87be7b4dec66db4098e9c167b2aa34e2ca10aeb5443bdde95ae03185ed513e0",
+            "url": "https://github.com/libsdl-org/SDL/releases/download/release-3.2.16/SDL3-3.2.16.tar.gz",
+            "sha256": "6340e58879b2d15830c8460d2f589a385c444d1faa2a4828a9626c7322562be8",
             "x-checker-data": {
                 "type": "anitya",
                 "project-id": 4781,
