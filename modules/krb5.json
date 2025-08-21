@@ -5,8 +5,8 @@
     "sources": [
         {
             "type": "archive",
-            "url": "https://kerberos.org/dist/krb5/1.22/krb5-1.22-beta1.tar.gz",
-            "sha256": "6a516fd180bdfe11c0c0ad774999e1a66295253390475cbfa88835983cf39559",
+            "url": "https://kerberos.org/dist/krb5/1.22/krb5-1.22.1.tar.gz",
+            "sha256": "1a8832b8cad923ebbf1394f67e2efcf41e3a49f460285a66e35adec8fa0053af",
             "x-checker-data": {
                 "type": "anitya",
                 "project-id": 13287,
