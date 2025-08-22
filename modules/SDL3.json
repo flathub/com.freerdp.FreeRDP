@@ -10,13 +10,13 @@
     "sources": [
         {
             "type": "archive",
-            "url": "https://github.com/libsdl-org/SDL/releases/download/release-3.2.16/SDL3-3.2.16.tar.gz",
-            "sha256": "6340e58879b2d15830c8460d2f589a385c444d1faa2a4828a9626c7322562be8",
+            "url": "https://github.com/libsdl-org/SDL/releases/download/release-3.2.20/SDL3-3.2.20.tar.gz",
+            "sha256": "467600ae090dd28616fa37369faf4e3143198ff1da37729b552137e47f751a67",
             "x-checker-data": {
                 "type": "anitya",
                 "project-id": 4781,
                 "stable-only": true,
-                "url-template": "https://github.com/libsdl-org/SDL_image/releases/download/release-${version0}.${version1}.${version2}/SDL3-${version0}.${version1}.${version2}.tar.gz"
+                "url-template": "https://github.com/libsdl-org/SDL_image/releases/download/release-${version}/SDL3-${version}.tar.gz"
             }
         }
     ],
