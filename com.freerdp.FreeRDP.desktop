@@ -11,6 +11,6 @@ Icon=com.freerdp.FreeRDP
 StartupNotify=true
 MimeType=x-scheme-handler/rdp;application/x-rdp;application/x-freerdp;
 Categories=Network;RemoteAccess;
-Keywords=remote desktop;rdp;
+Keywords=remote desktop;rdp;remote desktop client;rdp client;freerdp;remote access software;remote desktop protocol;
 StartupWMClass="com.freerdp.FreeRDP"
 X-Flatpak=com.freerdp.FreeRDP
