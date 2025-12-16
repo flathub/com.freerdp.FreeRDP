@@ -16,7 +16,7 @@
                 "type": "anitya",
                 "project-id": 4781,
                 "stable-only": true,
-                "url-template": "https://github.com/libsdl-org/SDL/releases/download/release-${version}/SDL3-${version}.tar.gz"
+                "url-template": "https://github.com/libsdl-org/SDL/releases/download/release-${version0}.${version1}.${version2}/SDL3-${version0}.${version1}.${version2}.tar.gz"
             }
         }
     ],
