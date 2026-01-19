@@ -36,10 +36,6 @@
         }
     },
     "modules": [
-        "shared-modules/libusb/libusb.json",
-        "modules/SDL3.json",
-        "modules/SDL3_ttf.json",
-        "modules/SDL3_image.json",
         "modules/cJSON.json",
         "modules/xprop.json",
         "modules/pcsc.json",
