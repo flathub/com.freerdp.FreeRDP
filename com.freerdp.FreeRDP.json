@@ -28,13 +28,6 @@
         "--filesystem=xdg-download",
         "--env=OPENSSL_CONF=/app/share/legacy-openssl.cnf"
     ],
-    "add-build-extensions": {
-        "org.freedesktop.Platform.openh264": {
-            "directory": "lib/openh264",
-            "version": "2.5.1",
-            "add-ld-path": "."
-        }
-    },
     "modules": [
         "modules/cJSON.json",
         "modules/xprop.json",
@@ -107,7 +100,6 @@
                 "install -D com.freerdp.FreeRDP.desktop $FLATPAK_DEST/share/applications/com.freerdp.FreeRDP.desktop",
                 "install -D com.freerdp.FreeRDP.appdata.xml $FLATPAK_DEST/share/appdata/com.freerdp.FreeRDP.appdata.xml",
                 "install -D legacy-openssl.cnf $FLATPAK_DEST/share/legacy-openssl.cnf",
-                "mkdir -p $FLATPAK_DEST/lib/openh264",
                 "install -D FreeRDP_Logo_Icon.svg $FLATPAK_DEST/share/icons/hicolor/scalable/apps/FreeRDP_Icon.svg",
                 "install -D FreeRDP_Logo_Icon.svg $FLATPAK_DEST/share/icons/hicolor/scalable/apps/FreeRDP_Logo.svg",
                 "install -D FreeRDP_Logo_Icon.svg $FLATPAK_DEST/share/icons/hicolor/scalable/apps/FreeRDP_Logo_Icon.svg",
