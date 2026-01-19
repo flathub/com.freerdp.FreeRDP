@@ -1,7 +1,7 @@
 {
     "app-id": "com.freerdp.FreeRDP",
     "runtime": "org.freedesktop.Platform",
-    "runtime-version": "24.08",
+    "runtime-version": "25.08",
     "sdk": "org.freedesktop.Sdk",
     "command": "sdl-freerdp",
     "cleanup": [
@@ -29,11 +29,6 @@
         "--env=OPENSSL_CONF=/app/share/legacy-openssl.cnf"
     ],
     "add-build-extensions": {
-        "org.freedesktop.Platform.ffmpeg-full": {
-            "directory": "lib/ffmpeg",
-            "version": "24.08",
-            "add-ld-path": "."
-        },
         "org.freedesktop.Platform.openh264": {
             "directory": "lib/openh264",
             "version": "2.5.1",
@@ -117,7 +112,6 @@
                 "install -D com.freerdp.FreeRDP.appdata.xml $FLATPAK_DEST/share/appdata/com.freerdp.FreeRDP.appdata.xml",
                 "install -D legacy-openssl.cnf $FLATPAK_DEST/share/legacy-openssl.cnf",
                 "mkdir -p $FLATPAK_DEST/lib/openh264",
-                "mkdir -p $FLATPAK_DEST/lib/ffmpeg",
                 "install -D FreeRDP_Logo_Icon.svg $FLATPAK_DEST/share/icons/hicolor/scalable/apps/FreeRDP_Icon.svg",
                 "install -D FreeRDP_Logo_Icon.svg $FLATPAK_DEST/share/icons/hicolor/scalable/apps/FreeRDP_Logo.svg",
                 "install -D FreeRDP_Logo_Icon.svg $FLATPAK_DEST/share/icons/hicolor/scalable/apps/FreeRDP_Logo_Icon.svg",
