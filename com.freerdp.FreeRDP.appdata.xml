@@ -6,7 +6,8 @@
   <description>
     <p>
       FreeRDP Flatpak provides xfreerdp client for systems lacking proper H264 support.
-      This build is focused on compatibility with Windows RDP servers and ships custom OpenSSL 1.1.1 to allow working connections to older systems like Windows 7 or Server 2008.
+      This build is focused on compatibility with Windows RDP servers and ships custom
+      OpenSSL 1.1.1 to allow working connections to older systems like Windows 7 or Server 2008.
     </p>
   </description>
   <categories>
@@ -47,12 +48,8 @@
   </provides>
 
   <releases>
-    <release version="3.20.2" date="2026-01-14">
-      <description></description>
-    </release>
-    <release version="3.20.0" date="2025-12-17">
-      <description/>
-    </release>
+    <release version="3.20.2" date="2026-01-14"/>
+    <release version="3.20.0" date="2025-12-17"/>
     <release version="3.19.1" date="2025-12-12">
       <url>https://github.com/FreeRDP/FreeRDP/releases/tag/3.19.1</url>
     </release>
@@ -61,102 +58,6 @@
     </release>
     <release version="3.18.0" date="2025-11-12">
       <url>https://github.com/FreeRDP/FreeRDP/releases/tag/3.18.0</url>
-    </release>
-    <release version="3.17.2" date="2025-09-19">
-      <description/>
-    </release>
-    <release version="3.17.1" date="2025-09-01">
-      <description/>
-    </release>
-    <release version="3.16.0" type="stable" urgency="medium" date="2025-06-16">
-      <url>https://github.com/FreeRDP/FreeRDP/releases/tag/3.16.0</url>
-    </release>
-    <release version="3.15.0" type="stable" urgency="medium" date="2025-04-14">
-      <url>https://github.com/FreeRDP/FreeRDP/releases/tag/3.15.0</url>
-    </release>
-    <release version="3.14.1" type="stable" urgency="medium" date="2025-03-25">
-      <url>https://github.com/FreeRDP/FreeRDP/releases/tag/3.14.1</url>
-    </release>
-    <release version="3.14.0" type="stable" urgency="medium" date="2025-03-13">
-      <url>https://github.com/FreeRDP/FreeRDP/releases/tag/3.14.0</url>
-    </release>
-    <release version="3.13.0" type="stable" urgency="medium" date="2025-03-06">
-      <url>https://github.com/FreeRDP/FreeRDP/releases/tag/3.13.0</url>
-    </release>
-    <release version="3.12.0" type="stable" urgency="medium" date="2025-02-14">
-      <url>https://github.com/FreeRDP/FreeRDP/releases/tag/3.12.0</url>
-    </release>
-    <release version="3.11.1" type="stable" urgency="medium" date="2025-02-07">
-      <url>https://github.com/FreeRDP/FreeRDP/releases/tag/3.11.1</url>
-    </release>
-    <release version="3.11.0" type="stable" urgency="medium" date="2025-02-05">
-      <url>https://github.com/FreeRDP/FreeRDP/releases/tag/3.11.0</url>
-    </release>
-    <release version="3.10.3" type="stable" urgency="medium" date="2024-12-17">
-      <url>https://github.com/FreeRDP/FreeRDP/releases/tag/3.10.3</url>
-    </release>
-    <release version="3.10.2" type="stable" urgency="medium" date="2024-12-16">
-      <url>https://github.com/FreeRDP/FreeRDP/releases/tag/3.10.2</url>
-    </release>
-    <release version="3.10.0" type="stable" urgency="medium" date="2024-12-12">
-      <url>https://github.com/FreeRDP/FreeRDP/releases/tag/3.10.0</url>
-    </release>
-    <release version="3.9.0" type="stable" urgency="medium" date="2024-10-21">
-      <url>https://github.com/FreeRDP/FreeRDP/releases/tag/3.9.0</url>
-    </release>
-    <release version="3.8.0" type="stable" urgency="medium" date="2024-08-30">
-      <url>https://github.com/FreeRDP/FreeRDP/releases/tag/3.8.0</url>
-    </release>
-    <release version="3.7.0" type="stable" urgency="medium" date="2024-08-08">
-      <url>https://github.com/FreeRDP/FreeRDP/releases/tag/3.7.0</url>
-    </release>
-    <release version="3.6.3" type="stable" urgency="medium" date="2024-07-08">
-      <url>https://github.com/FreeRDP/FreeRDP/releases/tag/3.6.3</url>
-    </release>
-    <release version="3.6.2" type="stable" urgency="medium" date="2024-07-04">
-      <url>https://github.com/FreeRDP/FreeRDP/releases/tag/3.6.2</url>
-    </release>
-    <release version="3.5.1" type="stable" urgency="medium" date="2024-04-22">
-      <url>https://github.com/FreeRDP/FreeRDP/releases/tag/3.5.1</url>
-    </release>
-    <release version="3.5.0" type="stable" urgency="medium" date="2024-04-16">
-      <url>https://github.com/FreeRDP/FreeRDP/releases/tag/3.5.0</url>
-    </release>
-    <release version="3.4.0" type="stable" urgency="medium" date="2024-03-14">
-      <url>https://github.com/FreeRDP/FreeRDP/releases/tag/3.4.0</url>
-    </release>
-    <release version="3.3.0" type="stable" urgency="medium" date="2024-02-22">
-      <url>https://github.com/FreeRDP/FreeRDP/releases/tag/3.3.0</url>
-    </release>
-    <release version="3.2.0" type="stable" urgency="medium" date="2024-01-19">
-      <url>https://github.com/FreeRDP/FreeRDP/releases/tag/3.2.0</url>
-    </release>
-    <release version="3.1.0" type="stable" urgency="medium" date="2023-12-21">
-      <url>https://github.com/FreeRDP/FreeRDP/releases/tag/3.1.0</url>
-    </release>
-    <release version="3.0.0" type="stable" urgency="medium" date="2023-12-12">
-      <url>https://github.com/FreeRDP/FreeRDP/releases/tag/3.0.0</url>
-    </release>
-    <release version="2.11.2" type="stable" urgency="medium" date="2023-09-20">
-      <url>https://github.com/FreeRDP/FreeRDP/releases/tag/2.11.2</url>
-    </release>
-    <release version="2.11.1" type="stable" urgency="medium" date="2023-09-04">
-      <url>https://github.com/FreeRDP/FreeRDP/releases/tag/2.11.1</url>
-    </release>
-    <release version="2.11.0" type="stable" urgency="medium" date="2023-08-28">
-      <url>https://github.com/FreeRDP/FreeRDP/releases/tag/2.11.0</url>
-    </release>
-    <release version="2.10.0" type="stable" urgency="medium" date="2023-02-16">
-      <url>https://github.com/FreeRDP/FreeRDP/releases/tag/2.10.0</url>
-    </release>
-    <release version="2.9.0" type="stable" urgency="medium" date="2022-11-16">
-      <url>https://github.com/FreeRDP/FreeRDP/releases/tag/2.9.0</url>
-    </release>
-    <release version="2.8.1" type="stable" urgency="medium" date="2022-10-12">
-      <url>https://github.com/FreeRDP/FreeRDP/releases/tag/2.8.1</url>
-    </release>
-    <release version="2.8.0" type="stable" urgency="medium" date="2022-07-28">
-      <url>https://github.com/FreeRDP/FreeRDP/releases/tag/2.8.0</url>
     </release>
   </releases>
 </component>
