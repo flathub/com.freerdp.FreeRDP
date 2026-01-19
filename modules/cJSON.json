@@ -5,6 +5,7 @@
     "cleanup": [],
     "config-opts": [
         "-DCMAKE_VERBOSE_MAKEFILE=ON",
+        "-DCMAKE_POLICY_VERSION_MINIMUM=3.5",
         "-DCMAKE_BUILD_TYPE:STRING=Release",
         "-DCMAKE_INSTALL_LIBDIR:PATH=lib",
         "-DWITH_PULSE:BOOL=ON"
