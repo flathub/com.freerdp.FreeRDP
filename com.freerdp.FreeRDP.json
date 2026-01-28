@@ -107,8 +107,20 @@
             ],
             "sources": [
                 {
-                    "type": "dir",
-                    "path": "."
+                    "type": "file",
+                    "path": "legacy-openssl.cnf"
+                },
+                {
+                    "type": "file",
+                    "path": "FreeRDP_Logo_Icon.svg"
+                },
+                {
+                    "type": "file",
+                    "path": "com.freerdp.FreeRDP.appdata.xml"
+                },
+                {
+                    "type": "file",
+                    "path": "com.freerdp.FreeRDP.desktop"
                 }
             ]
         }
