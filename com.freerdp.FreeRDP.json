@@ -90,6 +90,10 @@
                         "stable-only": true,
                         "url-template": "https://pub.freerdp.com/releases/freerdp-${version0}.${version1}.${version2}.tar.xz"
                     }
+                },
+                {
+                    "type": "patch",
+                    "path": "0001-channels-video-fix-wrong-cast.patch"
                 }
             ]
         },
