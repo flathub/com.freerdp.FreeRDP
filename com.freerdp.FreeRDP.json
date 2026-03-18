@@ -82,8 +82,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://pub.freerdp.com/releases/freerdp-3.24.0.tar.xz",
-                    "sha256": "c679bd3a3334aac5b6f4c69bc106e2074593ef31527ffa7aa7d12479f4e822ac",
+                    "url": "https://pub.freerdp.com/releases/freerdp-3.24.1.tar.xz",
+                    "sha256": "4f4e2a96b5f38e0cd7ea1dddb2b73f9f20c231fcae22f6b4bb90f9e66a577fcd",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 10442,
