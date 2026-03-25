@@ -82,18 +82,14 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://pub.freerdp.com/releases/freerdp-3.24.1.tar.xz",
-                    "sha256": "4f4e2a96b5f38e0cd7ea1dddb2b73f9f20c231fcae22f6b4bb90f9e66a577fcd",
+                    "url": "https://pub.freerdp.com/releases/freerdp-3.24.2.tar.xz",
+                    "sha256": "653b273f2a428b8a31be1e157815b2c9ec552a4c376ff3ec28b311c8a74e99b3",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 10442,
                         "stable-only": true,
                         "url-template": "https://pub.freerdp.com/releases/freerdp-${version0}.${version1}.${version2}.tar.xz"
                     }
-                },
-                {
-                    "type": "patch",
-                    "path": "0001-channels-video-fix-wrong-cast.patch"
                 }
             ]
         },
