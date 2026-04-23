@@ -47,11 +47,14 @@
   </provides>
 
   <releases>
-    <release version="3.24.2" date="2026-03-25">
+    <release version="3.25.0" date="2026-04-23">
       <description></description>
     </release>
+    <release version="3.24.2" date="2026-03-25">
+      <description/>
+    </release>
     <release version="3.24.1" date="2026-03-18">
-      <description></description>
+      <description/>
     </release>
     <release version="3.24.0" date="2026-03-13">
       <description/>
