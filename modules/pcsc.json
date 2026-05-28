@@ -1,12 +1,12 @@
 {
     "name": "pcsc",
+    "buildsystem": "meson",
+    "builddir": true,
     "config-opts": [
-        "--disable-libsystemd",
-        "--enable-pic",
-        "--disable-libusb",
-        "--enable-shared",
-        "--disable-polkit",
-        "--with-systemdsystemunitdir=/app/lib/systemd/"
+        "-Dlibsystemd=false",
+        "-Db_staticpic=true",
+        "-Dlibusb=false",
+        "-Dpolkit=false"
     ],
     "sources": [
         {
