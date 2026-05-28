@@ -1,18 +1,18 @@
 {
     "name": "pcsc",
+    "buildsystem": "meson",
+    "builddir": true,
     "config-opts": [
-        "--disable-libsystemd",
-        "--enable-pic",
-        "--disable-libusb",
-        "--enable-shared",
-        "--disable-polkit",
-        "--with-systemdsystemunitdir=/app/lib/systemd/"
+        "-Dlibsystemd=false",
+        "-Db_staticpic=true",
+        "-Dlibusb=false",
+        "-Dpolkit=false"
     ],
     "sources": [
         {
             "type": "archive",
-            "url": "https://github.com/LudovicRousseau/PCSC/archive/refs/tags/2.4.1.tar.gz",
-            "sha256": "e7b6737f68c3b9a763fb0b0370d899cea091cced9d762ca8a6032c959576d5be",
+            "url": "https://github.com/LudovicRousseau/PCSC/archive/refs/tags/2.5.0.tar.gz",
+            "sha256": "24879115bf502c61ee673d281a68c8578e3e82506f61e4b52ffdb662722f5698",
             "x-checker-data": {
                 "type": "anitya",
                 "project-id": 2611,
