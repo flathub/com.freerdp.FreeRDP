@@ -47,11 +47,14 @@
   </provides>
 
   <releases>
+    <release version="3.27.0" date="2026-06-15">
+      <description></description>
+    </release>
     <release version="3.26.0" date="2026-05-06">
       <url>https://github.com/FreeRDP/FreeRDP/releases/tag/3.26.0</url>
     </release>
     <release version="3.25.0" date="2026-04-23">
-      <description></description>
+      <description/>
     </release>
     <release version="3.24.2" date="2026-03-25">
       <description/>
