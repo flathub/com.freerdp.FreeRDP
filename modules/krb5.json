@@ -2,6 +2,9 @@
     "name": "krb5",
     "buildsystem": "autotools",
     "subdir": "src",
+    "make-args": [
+        "CFLAGS='-w'"
+    ],
     "sources": [
         {
             "type": "archive",
