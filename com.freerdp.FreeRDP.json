@@ -78,14 +78,14 @@
                 "-DWITH_CLIENT_SDL2:BOOL=OFF",
                 "-DWITH_CLIENT_SDL3:BOOL=ON",
                 "-DWITH_SDL_IMAGE_DIALOGS:BOOL=ON",
-                "-DWITH_WEBVIEW:BOOL=OFF",
+                "-DWITH_XDG_AAD_AUTH_HELPER:BOOL=ON",
                 "-DWITH_PULSE:BOOL=ON"
             ],
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://pub.freerdp.com/releases/freerdp-3.31.1.tar.xz",
-                    "sha256": "e679ab1400b4d3f829786782d16e318d72f4712c9d29c041a86f5cc1a2a4ec94",
+                    "url": "https://pub.freerdp.com/releases/freerdp-3.32.0.tar.xz",
+                    "sha256": "589632374993714ad0167eb720ae423a4bc94b2e2ad7187cbe360321f6aed035",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 10442,
