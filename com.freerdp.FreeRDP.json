@@ -1,8 +1,10 @@
 {
     "app-id": "com.freerdp.FreeRDP",
-    "runtime": "org.freedesktop.Platform",
-    "runtime-version": "26.08",
-    "sdk": "org.freedesktop.Sdk",
+    "runtime": "org.kde.Platform",
+    "runtime-version": "6.11",
+    "sdk": "org.kde.Sdk",
+    "base": "io.qt.qtwebengine.BaseApp",
+    "base-version": "6.11",
     "command": "sdl-freerdp",
     "cleanup": [
         "/lib/*.a",
@@ -78,7 +80,7 @@
                 "-DWITH_CLIENT_SDL2:BOOL=OFF",
                 "-DWITH_CLIENT_SDL3:BOOL=ON",
                 "-DWITH_SDL_IMAGE_DIALOGS:BOOL=ON",
-                "-DWITH_XDG_AAD_AUTH_HELPER:BOOL=OFF",
+                "-DWITH_QT_AAD_AUTH_HELPER:BOOL=ON",
                 "-DWITH_PULSE:BOOL=ON"
             ],
             "sources": [
