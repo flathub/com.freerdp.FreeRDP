@@ -11,8 +11,8 @@
     "sources": [
         {
             "type": "archive",
-            "url": "https://github.com/LudovicRousseau/PCSC/archive/refs/tags/2.5.2.tar.gz",
-            "sha256": "ca52f420194cef335114a10ca3b6369b64046f3d61d5b621595e0d487df18ce1",
+            "url": "https://github.com/LudovicRousseau/PCSC/archive/refs/tags/2.5.3.tar.gz",
+            "sha256": "c00ea09732bb46feb03eccc70d513c3b7922ea61954cfd0c0e691702bf1d579f",
             "x-checker-data": {
                 "type": "anitya",
                 "project-id": 2611,
