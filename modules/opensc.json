@@ -16,9 +16,9 @@
           "sha256": "f16291a031d86e570394762e9f35eaf2fcbc2337a49910f3feae42d54e1688cb",
           "x-checker-data": {
               "type": "anitya",
-              "project-id": 13287,
+              "project-id": 2559,
               "stable-only": true,
-              "url-template": "https://github.com/OpenSC/OpenSC/tags/${version0}.${version1}.${version2}"
+              "url-template": "https://github.com/OpenSC/OpenSC/releases/download/$version/opensc-$version.tar.gz"
           }
         }
       ]
